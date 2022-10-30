@@ -1,10 +1,8 @@
-version: "3.9"
+version: '2'
 services:
-  web:
-    build: .
-    ports:
-      - "8000:5000"
-    volumes:
-      - flaskdocker:/code
-volumes:
-  flaskdocker:
+    web:
+        build: .
+        ports:
+            - "5000:5000"
+        volumes:
+            - .:/flask_docker
